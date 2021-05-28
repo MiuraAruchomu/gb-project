@@ -1,0 +1,66 @@
+@import "_variables.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: $mainColorBlack;
+}
+
+input {
+    outline: none;
+    overflow: hidden;
+    border: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+    -moz-appearance: number-input;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    outline: none;
+    overflow: hidden;
+    border: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+select {
+    outline: none;
+    overflow: hidden;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
