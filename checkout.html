@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand - Checkout</title>
+    <link rel="stylesheet" href="style/css/checkout.css">
+    <script src="https://kit.fontawesome.com/ae903879c0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header container">
+            <div class="header__leftSide">
+                <div class="header__logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="logo">
+                        <div class="logoName">BRAN<span class="logoName-letter">D</span></div>
+                    </a>
+                </div>
+                <div class="header__search">
+                    <form method="get" class="header__search-form">
+                        <div class="header__browse"><a href="#">Browse <i class="fas fa-caret-down"></i></a></div>
+                        <input type="text" name="search" placeholder="Search for Item...">
+                        <button><a href="#"><i class="fas fa-search"></i></a></button>
+                    </form>
+                </div>
+            </div>
+            <div class="header__rightSide">
+                <input type="checkbox" class="basket-input" id="basket">
+                <label for="basket">
+                    <div class="basket"><img src="img/basket.svg" alt="basket"></div>
+                </label>
+                <div class="myAccount"><a href="#">My account <i class="fas fa-caret-down"></i></a></div>
+                <div class="basketContent">
+                    <div class="basketExit"><a href="#"><i class="fas fa-times"></i></a></div>
+                </div>
+                <div class="basketContent__bg"></div>
+            </div>
+        </div>
+        <div class="header__line"></div>
+        <nav>
+            <div class="nav container">
+                <ul class="nav__ul">
+                    <li class="nav__li"><a href="#">Home</a></li>
+                    <li class="nav__li"><a href="#">Man</a></li>
+                    <li class="nav__li"><a href="#">Women</a></li>
+                    <li class="nav__li"><a href="#">Kids</a></li>
+                    <li class="nav__li"><a href="#">Accoseriese</a></li>
+                    <li class="nav__li"><a href="#">Featured</a></li>
+                    <li class="nav__li"><a href="#">Hot Deals</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="newArrivals__backSpace">
+        <div class="content__newArrivals container">
+            <div class="newArrivals__text">new arrivals</div>
+            <ul class="newArrivals__navigation">
+                <li class="newArrivals__navigation-link"><a href="#">home</a></li>
+                /
+                <li class="newArrivals__navigation-link"><a href="#">men</a></li>
+                /
+                <li class="newArrivals__navigation-link newArrivals__navigation-linkSelected"><a href="#">new
+                        arrivals</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <input type="checkbox" class="shippingAdress-input" id="shippingAdressBox" checked>
+    <label for="shippingAdressBox">
+        <div class="shippingAdress__mainText container">01. SHIPPING ADRESS</div>
+    </label>
+    <div class="content__shippingAdress-box container">
+        <div class="shippingAdress__leftSide">
+            <div class="leftSide__guestOrRegister">
+                <div class="guestOrRegister__textTop-top">Check as a guest or register</div>
+                <div class="guestOrRegister__textTop-bottom">Register with us for future convenience</div>
+                <form action="#" class="shippingAdress__guestOrRegister-form">
+                    <input type="radio" class="radio" name="guestOrRegister" value="checkout as guest" id="shippingAdress-guest" checked>
+                    <label for="shippingAdress-guest">checkout as guest</label>
+                    <input type="radio" class="radio" name="guestOrRegister" value="register" id="shippingAdress-register">
+                    <label for="shippingAdress-register">register</label>
+                </form>
+                <div class="guestOrRegister__textBottom-top">register and save time!</div>
+                <div class="guestOrRegister__textBottom-bottom">Register with us for future convenience</div>
+                <div class="guestOrRegister__links">
+                    <a href="#"><i class="fas fa-angle-double-right"></i> Fast and easy checkout</a>
+                    <a href="#"><i class="fas fa-angle-double-right"></i> Easy access to your order history and
+                        status</a>
+                </div>
+                <div class="continue-button"><a href="#">Continue</a></div>
+            </div>
+        </div>
+        <div class="shippingAdress__rightSide">
+            <div class="rightSide__text-top">Already registed?</div>
+            <div class="rightSide__text-bottom"><a href="#">Please log in below</a></div>
+            <form action="#" class="registrationForm">
+                <div class="registrationForm__text-top">EMAIL ADDRESS</div>
+                <input type="email" class="registrationForm__email">
+                <div class="registrationForm__text-bottom">PASSWORD</div>
+                <input type="password" class="registrationForm__password">
+                <button class="button-logIn">log in</button><a href="#" class="forgotPassword">Forgot Password ?</a>
+            </form>
+        </div>
+    </div>
+
+    <div class="box__border container"></div>
+
+    <input type="checkbox" class="billingInformation-input" id="billingInformationBox" checked>
+    <label for="billingInformationBox">
+        <div class="billingInformation__mainText container">02. BILLING INFORMATION</div>
+    </label>
+    <div class="content__billingInformation-box container">
+        <div class="billingInformation__leftSide">
+            <div class="leftSide__guestOrRegister">
+                <div class="guestOrRegister__textTop-top">Check as a guest or register</div>
+                <div class="guestOrRegister__textTop-bottom">Register with us for future convenience</div>
+                <form action="#" class="billingInformation__guestOrRegister-form">
+                    <input type="radio" class="radio" name="guestOrRegister" value="checkout as guest" id="billingInformation-guest" checked>
+                    <label for="billingInformation-guest">checkout as guest</label>
+                    <input type="radio" class="radio" name="guestOrRegister" value="register" id="billingInformation-register">
+                    <label for="billingInformation-register">register</label>
+                </form>
+                <div class="guestOrRegister__textBottom-top">register and save time!</div>
+                <div class="guestOrRegister__textBottom-bottom">Register with us for future convenience</div>
+                <div class="guestOrRegister__links">
+                    <a href="#"><i class="fas fa-angle-double-right"></i> Fast and easy checkout</a>
+                    <a href="#"><i class="fas fa-angle-double-right"></i> Easy access to your order history and
+                        status</a>
+                </div>
+                <div class="continue-button"><a href="#">Continue</a></div>
+            </div>
+        </div>
+        <div class="billingInformation__rightSide">
+            <div class="rightSide__text-top">Already registed?</div>
+            <div class="rightSide__text-bottom"><a href="#">Please log in below</a></div>
+            <form action="#" class="registrationForm">
+                <div class="registrationForm__text-top">EMAIL ADDRESS</div>
+                <input type="email" class="registrationForm__email">
+                <div class="registrationForm__text-bottom">PASSWORD</div>
+                <input type="password" class="registrationForm__password">
+                <button class="button-logIn">log in</button><a href="#" class="forgotPassword">Forgot Password ?</a>
+            </form>
+        </div>
+    </div>
+
+    <div class="box__border container"></div>
+
+    <input type="checkbox" class="shippingInformation-input" id="shippingInformationBox" checked>
+    <label for="shippingInformationBox">
+        <div class="shippingInformation__mainText container">03. SHIPPING INFORMATION</div>
+    </label>
+    <div class="content__shippingInformation-box container">
+        <div class="shippingInformation__leftSide">
+            <div class="leftSide__guestOrRegister">
+                <div class="guestOrRegister__textTop-top">Check as a guest or register</div>
+                <div class="guestOrRegister__textTop-bottom">Register with us for future convenience</div>
+                <form action="#" class="shippingInformation__guestOrRegister-form">
+                    <input type="radio" class="radio" name="guestOrRegister" value="checkout as guest" id="shippingInformation-guest" checked>
+                    <label for="shippingInformation-guest">checkout as guest</label>
+                    <input type="radio" class="radio" name="guestOrRegister" value="register" id="shippingInformation-register">
+                    <label for="shippingInformation-register">register</label>
+                </form>
+                <div class="guestOrRegister__textBottom-top">register and save time!</div>
+                <div class="guestOrRegister__textBottom-bottom">Register with us for future convenience</div>
+                <div class="guestOrRegister__links">
+                    <a href="#"><i class="fas fa-angle-double-right"></i> Fast and easy checkout</a>
+                    <a href="#"><i class="fas fa-angle-double-right"></i> Easy access to your order history and
+                        status</a>
+                </div>
+                <div class="continue-button"><a href="#">Continue</a></div>
+            </div>
+        </div>
+        <div class="shippingInformation__rightSide">
+            <div class="rightSide__text-top">Already registed?</div>
+            <div class="rightSide__text-bottom"><a href="#">Please log in below</a></div>
+            <form action="#" class="registrationForm">
+                <div class="registrationForm__text-top">EMAIL ADDRESS</div>
+                <input type="email" class="registrationForm__email">
+                <div class="registrationForm__text-bottom">PASSWORD</div>
+                <input type="password" class="registrationForm__password">
+                <button class="button-logIn">log in</button><a href="#" class="forgotPassword">Forgot Password ?</a>
+            </form>
+        </div>
+    </div>
+
+    <div class="box__border container"></div>
+
+    <input type="checkbox" class="shippingMethod-input" id="shippingMethodBox" checked>
+    <label for="shippingMethodBox">
+        <div class="shippingMethod__mainText container">04. SHIPPING METHOD</div>
+    </label>
+    <div class="content__shippingMethod-box container">
+        <div class="shippingMethod__leftSide">
+            <div class="leftSide__guestOrRegister">
+                <div class="guestOrRegister__textTop-top">Check as a guest or register</div>
+                <div class="guestOrRegister__textTop-bottom">Register with us for future convenience</div>
+                <form action="#" class="shippingMethod__guestOrRegister-form">
+                    <input type="radio" class="radio" name="guestOrRegister" value="checkout as guest" id="shippingMethod-guest" checked>
+                    <label for="shippingMethod-guest">checkout as guest</label>
+                    <input type="radio" class="radio" name="guestOrRegister" value="register" id="shippingMethod-register">
+                    <label for="shippingMethod-register">register</label>
+                </form>
+                <div class="guestOrRegister__textBottom-top">register and save time!</div>
+                <div class="guestOrRegister__textBottom-bottom">Register with us for future convenience</div>
+                <div class="guestOrRegister__links">
+                    <a href="#"><i class="fas fa-angle-double-right"></i> Fast and easy checkout</a>
+                    <a href="#"><i class="fas fa-angle-double-right"></i> Easy access to your order history and
+                        status</a>
+                </div>
+                <div class="continue-button"><a href="#">Continue</a></div>
+            </div>
+        </div>
+        <div class="shippingMethod__rightSide">
+            <div class="rightSide__text-top">Already registed?</div>
+            <div class="rightSide__text-bottom"><a href="#">Please log in below</a></div>
+            <form action="#" class="registrationForm">
+                <div class="registrationForm__text-top">EMAIL ADDRESS</div>
+                <input type="email" class="registrationForm__email">
+                <div class="registrationForm__text-bottom">PASSWORD</div>
+                <input type="password" class="registrationForm__password">
+                <button class="button-logIn">log in</button><a href="#" class="forgotPassword">Forgot Password ?</a>
+            </form>
+        </div>
+    </div>
+
+    <div class="box__border container"></div>
+
+    <input type="checkbox" class="paymentMethod-input" id="paymentMethodBox" checked>
+    <label for="paymentMethodBox">
+        <div class="paymentMethod__mainText container">05. PAYMENT METHOD</div>
+    </label>
+    <div class="content__paymentMethod-box container">
+        <div class="paymentMethod__leftSide">
+            <div class="leftSide__guestOrRegister">
+                <div class="guestOrRegister__textTop-top">Check as a guest or register</div>
+                <div class="guestOrRegister__textTop-bottom">Register with us for future convenience</div>
+                <form action="#" class="paymentMethod__guestOrRegister-form">
+                    <input type="radio" class="radio" name="guestOrRegister" value="checkout as guest" id="paymentMethod-guest" checked>
+                    <label for="paymentMethod-guest">checkout as guest</label>
+                    <input type="radio" class="radio" name="guestOrRegister" value="register" id="paymentMethod-register">
+                    <label for="paymentMethod-register">register</label>
+                </form>
+                <div class="guestOrRegister__textBottom-top">register and save time!</div>
+                <div class="guestOrRegister__textBottom-bottom">Register with us for future convenience</div>
+                <div class="guestOrRegister__links">
+                    <a href="#"><i class="fas fa-angle-double-right"></i> Fast and easy checkout</a>
+                    <a href="#"><i class="fas fa-angle-double-right"></i> Easy access to your order history and
+                        status</a>
+                </div>
+                <div class="continue-button"><a href="#">Continue</a></div>
+            </div>
+        </div>
+        <div class="paymentMethod__rightSide">
+            <div class="rightSide__text-top">Already registed?</div>
+            <div class="rightSide__text-bottom"><a href="#">Please log in below</a></div>
+            <form action="#" class="registrationForm">
+                <div class="registrationForm__text-top">EMAIL ADDRESS</div>
+                <input type="email" class="registrationForm__email">
+                <div class="registrationForm__text-bottom">PASSWORD</div>
+                <input type="password" class="registrationForm__password">
+                <button class="button-logIn">log in</button><a href="#" class="forgotPassword">Forgot Password ?</a>
+            </form>
+        </div>
+    </div>
+
+    <div class="box__border container"></div>
+
+    <input type="checkbox" class="orderReview-input" id="orderReviewBox" checked>
+    <label for="orderReviewBox">
+        <div class="orderReview__mainText container">06. ORDER REVIEW</div>
+    </label>
+    <div class="content__orderReview-box container">
+        <div class="orderReview__leftSide">
+            <div class="leftSide__guestOrRegister">
+                <div class="guestOrRegister__textTop-top">Check as a guest or register</div>
+                <div class="guestOrRegister__textTop-bottom">Register with us for future convenience</div>
+                <form action="#" class="orderReview__guestOrRegister-form">
+                    <input type="radio" class="radio" name="guestOrRegister" value="checkout as guest" id="orderReview-guest" checked>
+                    <label for="orderReview-guest">checkout as guest</label>
+                    <input type="radio" class="radio" name="guestOrRegister" value="register" id="orderReview-register">
+                    <label for="orderReview-register">register</label>
+                </form>
+                <div class="guestOrRegister__textBottom-top">register and save time!</div>
+                <div class="guestOrRegister__textBottom-bottom">Register with us for future convenience</div>
+                <div class="guestOrRegister__links">
+                    <a href="#"><i class="fas fa-angle-double-right"></i> Fast and easy checkout</a>
+                    <a href="#"><i class="fas fa-angle-double-right"></i> Easy access to your order history and
+                        status</a>
+                </div>
+                <div class="continue-button"><a href="#">Continue</a></div>
+            </div>
+        </div>
+        <div class="orderReview__rightSide">
+            <div class="rightSide__text-top">Already registed?</div>
+            <div class="rightSide__text-bottom"><a href="#">Please log in below</a></div>
+            <form action="#" class="registrationForm">
+                <div class="registrationForm__text-top">EMAIL ADDRESS</div>
+                <input type="email" class="registrationForm__email">
+                <div class="registrationForm__text-bottom">PASSWORD</div>
+                <input type="password" class="registrationForm__password">
+                <button class="button-logIn">log in</button><a href="#" class="forgotPassword">Forgot Password ?</a>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="subscribe__backSpace">
+            <div class="footer__subscribe container">
+                <div class="subscribe__leftSide">
+                    <div class="leftSide__content">
+                        <div class="user__avatar"><img src="img/subscribe_avatar.png" alt="avatar"></div>
+                        <div class="user__text">
+                            <div class="user__comment">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                                a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</div>
+                            <div class="user__info">
+                                <div class="user__info-name">Bin Burhan</div>
+                                <div class="user__info-country">Dhaka, Bd</div>
+                            </div>
+                            <div class="user__slider">
+                                <div class="slider__block"><a href="#"></a></div>
+                                <div class="slider__block slider__block-selected"><a href="#"></a></div>
+                                <div class="slider__block"><a href="#"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subscribe__rightSide">
+                    <div class="rightSide__content">
+                        <div class="subscribe__text">
+                            <div class="subscribe__text-top">Subscribe</div>
+                            <div class="subscribe__text-bottom">FOR OUR NEWLETTER AND PROMOTION</div>
+                        </div>
+                        <div class="subscribe__email">
+                            <form method="get" class="subscribe__emailForm">
+                                <input type="text" name="email" placeholder="Enter Your Email"><button><a
+                                        href="#">Subscribe</a></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__navigation container">
+            <div class="navigation__brandInfo">
+                <div class="brandInfo__logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="logo">
+                        <div class="logoName">BRAN<span class="logoName-letter">D</span></div>
+                    </a>
+                </div>
+                <div class="brandInfo__text">Objectively transition extensive data rather than cross functional
+                    solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits.
+                    Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
+                    <br>
+                    <br>
+                    Efficiently plagiarize 24/365 action items and focused infomediaries.
+                    Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                </div>
+            </div>
+            <div class="navigation__list">
+                <div class="navigation__column">
+                    <div class="navigation__name">company</div>
+                    <ul class="navigation__links">
+                        <li class="navigation__link"><a href="#">Home</a></li>
+                        <li class="navigation__link"><a href="#">Shop</a></li>
+                        <li class="navigation__link"><a href="#">About</a></li>
+                        <li class="navigation__link"><a href="#">How It Works</a></li>
+                        <li class="navigation__link"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navigation__column">
+                    <div class="navigation__name">information</div>
+                    <ul class="navigation__links">
+                        <li class="navigation__link"><a href="#">Tearms & Condition</a></li>
+                        <li class="navigation__link"><a href="#">Privacy Policy</a></li>
+                        <li class="navigation__link"><a href="#">How to Buy</a></li>
+                        <li class="navigation__link"><a href="#">How to Sell</a></li>
+                        <li class="navigation__link"><a href="#">Promotion</a></li>
+                    </ul>
+                </div>
+                <div class="navigation__column">
+                    <div class="navigation__name">shop category</div>
+                    <ul class="navigation__links">
+                        <li class="navigation__link"><a href="#">Men</a></li>
+                        <li class="navigation__link"><a href="#">Women</a></li>
+                        <li class="navigation__link"><a href="#">Child</a></li>
+                        <li class="navigation__link"><a href="#">Apparel</a></li>
+                        <li class="navigation__link"><a href="#">Brows All</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__backSpace">
+            <div class="footer container">
+                <div class="footer__rights">© 2017 Brand All Rights Reserved.</div>
+                <div class="footer__links">
+                    <div class="footer__link"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+                    <div class="footer__link"><a href="#"><i class="fab fa-twitter"></i></a></div>
+                    <div class="footer__link"><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
+                    <div class="footer__link"><a href="#"><i class="fab fa-pinterest-p"></i></a></div>
+                    <div class="footer__link"><a href="#"><i class="fab fa-google-plus-g"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
