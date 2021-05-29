@@ -64,3 +64,13 @@ select {
     max-width: 1140px;
     margin: 0 auto;
 }
+
+.goods-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border: 1px solid $mainColorBlack;
+}

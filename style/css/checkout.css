@@ -65,6 +65,25 @@ select {
   margin: 0 auto;
 }
 
+.goods-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #222222;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -313,19 +332,19 @@ select {
   display: none;
 }
 
-.basket-input:checked ~ .basketContent__bg {
+.basket-input:checked ~ .basket-bg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.basket-input:checked ~ .basketContent {
+.basket-input:checked ~ .basket-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.basketContent__bg {
+.basket-bg {
   display: none;
   position: fixed;
   left: 0;
@@ -337,12 +356,9 @@ select {
   opacity: 0.5;
 }
 
-.basketContent {
+.basket-block {
   display: none;
   position: fixed;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   z-index: 101;
   width: 850px;
   height: 550px;
@@ -354,7 +370,9 @@ select {
   right: 0;
 }
 
-.basketExit {
+.basket-content {
+  width: inherit;
+  height: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -364,16 +382,36 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 40px;
-  height: 40px;
+  position: relative;
 }
 
-.basketExit a {
+.basket-exit-button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-top: 15px;
+  margin-right: 15px;
   color: #222222;
 }
 
-.basketExit a:hover {
+.basket-exit-button:hover {
   color: #f16d7f;
+}
+
+.goods-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 90%;
+  height: 90%;
 }
 
 .subscribe__backSpace {
